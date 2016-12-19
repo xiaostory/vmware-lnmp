@@ -107,7 +107,8 @@
 
 ## 安装帮助
  - [libmcrypt](https://pkgs.org/centos-6/epel-x86_64/libmcrypt-2.5.8-9.el6.x86_64.rpm.html)
-     >PHP安装过程中,如出现 libmcrypt 相关报错,参考以上链接
+ 
+    >PHP安装过程中,如出现 libmcrypt 相关报错,参考以上链接
 
 ## 联系我
 - 邮箱：<a href="mailto:itwangxf@sina.cn">发邮件给我</a>
