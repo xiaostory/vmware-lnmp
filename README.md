@@ -31,6 +31,7 @@
 ### 更新Yum源
  - [Yum源使用帮助](http://mirrors.163.com/.help/centos.html)
  - Yum源获取
+ 
     ```
     wget http://mirrors.163.com/.help/CentOS6-Base-163.repo
     ```
@@ -87,8 +88,28 @@
 
 ### PHP安装
  - [PHP 5.6 on CentOS Via Yum](https://webtatic.com/packages/php56/)
-
-
+ 
+### Redis安装
+ - PHP扩展
+ 
+    ```
+    yum install -y php56w-pcel-redis
+    ```
+ 
+ - redis
+ 
+    ```
+    wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+    wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+    rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
+    yum --enablerepo=remi install -y redis
+    wget http://dl.fedoraproject.org/pub/epel/6/x86_64/jemalloc-3.6.0-1.el6.x86_64.rpm
+    rpm -Uvh jemalloc-3.6.0-1.el6.x86_64.rpm
+    yum --enablerepo=remi install -y redis
+    service redis start
+    chkconfig redis on
+    ```
+ 
 ## 文件同步
 
 ### vmtools 安装
