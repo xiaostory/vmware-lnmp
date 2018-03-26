@@ -120,6 +120,13 @@
     yum -y install perl
     ```
  - [vmware tools on CentOS-6.8-x86_64-minimal](http://blog.sina.com.cn/s/blog_4c86552f0102wmab.html)
+ 
+ - 启动服务
+     ```
+     /etc/vmware-tools/services.sh start
+    ```
+    >启动报错：Blocking file system: [FAILED] yum install fuse-libs
+    
  - 设置本地项目和虚拟机共享目录同步
     >菜单栏 虚拟机 > 设置 > 选项 > 共享文件夹
 
